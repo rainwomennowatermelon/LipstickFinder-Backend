@@ -59,4 +59,6 @@ The *evaluation*  folder is an independent module. It gives test to the baseline
         └─star (Dior star style)
 ```
 ## References
-Code Source: https://github.com/zllrunning/face-parsing.PyTorch
+Face-parsing Code Source: https://github.com/zllrunning/face-parsing.PyTorch
+
+Collaborative Filtering Code Source: https://medium.com/sfu-cspmp/recommendation-systems-user-based-collaborative-filtering-using-n-nearest-neighbors-bf7361dc24e0
