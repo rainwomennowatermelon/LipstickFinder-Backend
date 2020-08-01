@@ -1,0 +1,22 @@
+F:\Codes\LipstickFinder-Backend
+├─.gitignore
+├─app.py
+├─README.md
+├─requirements.txt
+├─utils
+|   └colorMethods.py
+├─src
+|  ├─lipstickRecommendation.py
+|  └usersManagement.py
+├─scheduledJob
+|      └userBasedCF.py
+├─res
+|  ├─data
+|  |  ├─profiles
+|  |  ├─face-parsing-predictImgDir
+|  |  ├─face-parsing-makeupImgDir
+|  ├─cp
+|  | └79999_iter.pth
+├─models
+|   ├─model.py
+|   └resnet.py
