@@ -6,14 +6,17 @@ The backend of Lipstick Finder has 4 major functions:
 *	Lip digital makeup
 *	Daily lipsticks recommendation
 *	User management
+
+The *evaluation*  folder is an independent module. It gives test to the baseline and RMBD algorithm on our test dataset.
 ## Directory Tree
+### Backend
 ``` bash
 │  app.py (Start our Flask server)
 │  requirements.txt (Includes the required packages)
 │  
 ├─models
 │      model.py (BiSeNet model)
-│      resnet.py (ResNet model)
+│      resnet.py (ResNet-18 model)
 │      
 ├─res
 │  ├─cp
@@ -35,5 +38,25 @@ The backend of Lipstick Finder has 4 major functions:
         colorMethods.py (Color transformation util)
 ```
 
+### Evaluation
+``` bash
+│  testBaselineProgram.py (The baseline's test program: without points removement)
+│  testRmbdProgram.py (RMBD's test program)
+│  
+├─json
+│      lipsticksMod.json (Our updated color database)
+│      
+├─models
+│      model.py (BiSeNet model)
+│      resnet.py (ResNet-18 model)
+│      
+└─testDataset
+    ├─daily (Labeled lipsticks in daily life style)
+    └─dior
+        ├─rouge (Dior rouge style)
+        ├─rougered (Dior rouge red style)
+        ├─seductive (Dior seductive style)
+        └─star (Dior star style)
+```
 ## References
 Code Source: https://github.com/zllrunning/face-parsing.PyTorch
