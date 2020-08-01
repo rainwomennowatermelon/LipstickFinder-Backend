@@ -1,38 +1,39 @@
-# PickMeUp-Backend
+# LipstickFinder-Backend
+## Introduction
+The backend of Lipstick Finder has 4 major functions:
+
+*	Lipstick recognition
+*	Lip digital makeup
+*	Daily lipsticks recommendation
+*	User management
 ## Directory Tree
 ``` bash
-│  .gitignore
-│  app.py
-│  list.txt
-│  README.md
-│  requirements.txt
-│  result.txt
+│  app.py (Start our Flask server)
+│  requirements.txt (Includes the required packages)
 │  
 ├─models
-│      model.py
-│      resnet.py
+│      model.py (BiSeNet model)
+│      resnet.py (ResNet model)
 │      
 ├─res
 │  ├─cp
-│  │      79999_iter.pth
+│  │      79999_iter.pth (Pre-trained face-parsing model)
 │  │      
 │  └─data
-│      ├─face-parsing-makeupImgDir
-│      ├─face-parsing-predictImgDir
-│      └─profiles
+│      ├─face-parsing-makeupImgDir (Lip makeup images store path)
+│      ├─face-parsing-predictImgDir (Lipstick recognition images store path)
+│      └─profiles (Profile images store path)
 │              
 ├─scheduledJob
-│      userBasedCF.py
+│      userBasedCF.py (Daily job to generate collaborative filtering result)
 │      
 ├─src
-│      lipstickRecommendation.py
-│      usersManagement.py
+│      lipstickRecommendation.py (Lipstick recommendation SDK)
+│      usersManagement.py (User management SDK)
 │      
 └─utils
-        colorMethods.py
+        colorMethods.py (Color transformation util)
 ```
 
 ## References
 Code Source: https://github.com/zllrunning/face-parsing.PyTorch
-
-Data Source: https://github.com/Ovilia/lipstick
