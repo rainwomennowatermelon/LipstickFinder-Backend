@@ -1,4 +1,10 @@
 # LipstickFinder-Backend
+[Lipstick Finder Project Website](https://rainwomennowatermelon.github.io/LipstickFinder/)
+
+Frontend repository: [LipstickFinder](https://github.com/rainwomennowatermelon/LipstickFinder)
+
+Project report: [Lipstick Finder: A Mobile Application for Lipstick Recognition, Makeup, and Recommendation.pdf](https://drive.google.com/file/d/1q-VDsfE68LNeNTS8KZzClKLqlieA2pn-/view?usp=sharing)
+
 ## Introduction
 The backend of Lipstick Finder has 4 major functions:
 
